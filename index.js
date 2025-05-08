@@ -1,6 +1,7 @@
 import { NativeModules } from 'react-native';
 const { RNYeefxReactNativeModule } = NativeModules;
 
+console.log("");
 
 //sdk初始化
 function init(config) {
@@ -8,7 +9,7 @@ function init(config) {
     if (RNYeefxReactNativeModule && RNYeefxReactNativeModule.init) {
         RNYeefxReactNativeModule.init(config);
     } else {
-        console.error('RNYeefxSdkModule 或 init 方法未找到');
+        console.error('RNYeefxReactNativeModule 或 init 方法未找到');
     }
 }
 
@@ -77,7 +78,7 @@ function setUserStartTrack() {
 }
 
 /**
- * Promise 方式 getUserCookie 获取匿名 ID.
+ * Promise 方式 getUserCookie 获取匿名 ID
  */
 async function getUserCookie() {
     if (RNYeefxReactNativeModule && RNYeefxReactNativeModule.getUserCookie) {

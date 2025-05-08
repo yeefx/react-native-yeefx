@@ -15,7 +15,4 @@ Pod::Spec.new do |s|
   s.source_files  = "react-native-yeefx/**/*.{h,m}"
   s.requires_arc = true
   s.dependency "React"
-
 end
-
-  
