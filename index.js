@@ -1,7 +1,6 @@
 import { NativeModules } from 'react-native';
 const { RNYeefxReactNativeModule } = NativeModules;
 
-console.log("");
 
 //sdk初始化
 function init(config) {
