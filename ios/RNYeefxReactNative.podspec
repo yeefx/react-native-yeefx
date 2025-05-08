@@ -11,13 +11,10 @@ Pod::Spec.new do |s|
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/author/react-native-yeefx.git", :tag => "master" }
+  s.source       = { :git => "https://github.com/yeefx/react-native-yeefx.git", :tag => "master" }
   s.source_files  = "react-native-yeefx/**/*.{h,m}"
   s.requires_arc = true
-
-
   s.dependency "React"
-  #s.dependency "others"
 
 end
 
