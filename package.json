@@ -1,0 +1,38 @@
+{
+  "name": "react-native-yeefx",
+  "version": "1.0.7",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+    
+  ],
+  "react-native": {
+    "android": {
+        "sourceDir": "./android",
+        "packageImportPath": "import com.yeefx.react.RNYeefxReactNativePackage;",
+        "packageInstance": "new RNYeefxReactNativePackage()"
+    },
+    "ios": {
+        "sourceDir": "./ios",
+        "podspec": "./RNYeefxReactNativeModule.podspec"
+    }
+  },
+  "author": "",
+  "license": "",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-optional-catch-binding": "^7.27.1",
+    "glob": "^9.3.5",
+    "react": "^18.2.0",
+    "react-native": "0.72.5",
+    "rimraf": "^4.4.1",
+    "uglify-js": "^3.19.3"
+  }
+}

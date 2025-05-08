@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+// 配置 Android 相关属性
+android {
+    // 编译 SDK 版本，要和主项目保持一致
+    compileSdkVersion rootProject.ext.compileSdkVersion 
+
+    defaultConfig {
+        // 最小支持的 SDK 版本，和主项目一致
+        minSdkVersion rootProject.ext.minSdkVersion 
+        // 目标 SDK 版本，和主项目一致
+        targetSdkVersion rootProject.ext.targetSdkVersion 
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.facebook.react:react-native:+'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+  

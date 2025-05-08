@@ -1,0 +1,6 @@
+framework module YeefxSDK {
+  umbrella header "YeefxSDK.h"
+  export *
+
+  module * { export * }
+}
